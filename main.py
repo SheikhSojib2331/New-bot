@@ -23,5 +23,6 @@ async def send_latest(client, message):
     except Exception as e:
         await message.reply_text(f"দুঃখিত, কোনো সমস্যা হয়েছে: {e}")
 
-print("বটটি সক্রিয় হয়েছে...")
-app.run()
+if __name__ == "__main__":
+    print("বটটি সক্রিয় হয়েছে...")
+    app.run()
